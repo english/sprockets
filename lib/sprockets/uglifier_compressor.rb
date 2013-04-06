@@ -16,7 +16,7 @@ module Sprockets
     end
 
     def evaluate(context, locals, &block)
-      Uglifier.new(:copyright => false).compile(data)
+      Uglifier.new.compile(data)
     end
   end
 end
